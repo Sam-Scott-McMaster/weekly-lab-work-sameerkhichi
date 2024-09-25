@@ -1,0 +1,6 @@
+cat *.txt | splt | sort | uniq
+cat *.txt | splt | sort | uniq | wc -w
+cat *.txt | splt | sort | uniq | tee lexicon.txt
+cat *.txt | splt | sort | uniq | head -n 1
+cat *.txt | splt | sort | uniq | tail -n 1
+cat *.txt | splt | sort | uniq | sed -n '9998p'

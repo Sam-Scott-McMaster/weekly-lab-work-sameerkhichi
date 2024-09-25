@@ -1,0 +1,5 @@
+cat novelas_cortas.txt | splt | wc | wstat
+cat *.txt | splt | wc | wstat
+cat *.txt | splt | head -n 100 | wc | wstat
+cat *.txt | splt | tail -n 100 | wc | wstat
+cat *.txt | splt | uniq | wc | wstat
