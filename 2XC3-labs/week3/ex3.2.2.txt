@@ -1,0 +1,8 @@
+a. The script listed essentially takes the first argument entered after calling a file or script.
+the command you would have to use to run the ls -l command using the script given, assuming the name of the executable 
+file is di is: ./di.sh "ls -l"
+
+b. the following would be sent to the stdout: "a 1 a1C 1*10" 
+The reason the last varibale D, doesnt actually multiply the variable value of 1 by 10 is because the variable D holds a STRING value of "1" not an integer value.
+
+ 
