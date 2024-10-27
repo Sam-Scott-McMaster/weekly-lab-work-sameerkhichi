@@ -1,0 +1,39 @@
+        -:    0:Source:digits.c
+        -:    0:Graph:testdigits-digits.gcno
+        -:    0:Data:testdigits-digits.gcda
+        -:    0:Runs:2
+        -:    1:/* Starter code for Lab 6.1 Activity
+        -:    2: *
+        -:    3: * This file will not compile as is. You need to create the digits function.
+        -:    4: *
+        -:    5: */
+        -:    6:#include <stdio.h>
+        -:    7:#include <stdlib.h>
+        -:    8:
+        -:    9:/* Main function. Runs test cases for the digits function.
+        -:   10: * Exits with failure code on first test case fail.
+        -:   11: * Otherwise exits with success.
+        -:   12: */
+        -:   13:
+        2:   14:int digits(long n, int *max, int *min) {
+        2:   15:    int sum = 0;
+        2:   16:    *max = 0;
+        2:   17:    *min = 9;
+        -:   18:
+       10:   19:    while (n > 0) {
+        8:   20:        int digit = n % 10;  // strip the rightmost digit
+        8:   21:        sum += digit;        // updating the sum by adding the digits
+        -:   22:
+        -:   23:        // Update max and min pointers
+        8:   24:        if (digit > *max) {
+        2:   25:            *max = digit;
+        -:   26:        }
+        8:   27:        if (digit < *min) {
+        8:   28:            *min = digit;
+        -:   29:        }
+        -:   30:
+        8:   31:        n = n / 10;  // Remove the rightmost digit
+        -:   32:    }
+        -:   33:
+        2:   34:    return sum;  // Return the sum of digits
+        -:   35:}

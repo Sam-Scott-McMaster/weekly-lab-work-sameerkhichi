@@ -1,0 +1,5 @@
+The & operator offers a different type of side effect where it lets a variable inside a function be linked to a variable in another function. This is pretty cool as it allows you to modify the variable that was called inside a seperate function.
+
+Some advantages of this is that it increases efficiency, it makes it so that you avoid copying large amounts of data. Direct modification is also a great benifit as you can modify multiple variables without complex data structures. Furthermore, the direct modification allows for flexibility making functions powerful with less excessive return values.
+
+Though there are some great advantages, there are also some disadvantages. This approach makes it harder to read and debug code as it refers to variables outside of the function, making it harder to trace. This also makes it difficult to predict what the code might return. The main problem with this approach however is that it makes the code less portable.
