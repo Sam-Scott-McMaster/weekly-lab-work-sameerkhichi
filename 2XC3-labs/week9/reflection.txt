@@ -1,0 +1,8 @@
+Removing the functions resulted in a completion time of 2.72 seconds while keeping the function as macros resulted in a completion time of 2.83 seconds. The completion time for the original primes file was 3.69 seconds.
+Removing the function calls will result in a completion time 1 second fasterdue to the lower percentage of useage in the gprof report, however I wouldnt remove them as the quality of the source code is higher when using functions as it applies programming principles to a higher degree. Therefore I dont think removing function calls from a program is a good idea.
+
+If you are looking to remove function calls, based off the quntative results, using macros resulted in a time of 2.83 while replacing them gave a time of 2.72. Therefore to remove function calls replace the function calls with simple boolean expressions.
+
+I got much better performance by improving the algorithm with a completion time of 0.0360 seconds. This is evident based off of the gprof reports, the percentage of time the functions were used were greatly reduced thanks to the simplified algorithm. This is because you dont have to check past the square root of a number due to the properties of factors. This reduces the amount of checks required thus reducing the amount of times the function would need to be called, finally reducing the percentage of time it runs for as shown in the gprof report.
+
+It would be a good idea to remove function calls from your code if you are using loops multiple times for a simple task, a simple boolean expression would suffice. Ultimately though, you would remove function calls when performace is absolutely critical, and to simplify the code to make it easier to read.
